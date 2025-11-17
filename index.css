@@ -17,6 +17,32 @@ body {
 
 
 
+/* image size regulation */
+.background-image {
+    max-height: 100vh;
+}
+.odin img {
+    width: 4em;
+}
+
+
+
+
+/* grid, grid elements */
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "background header"
+        "background main"
+        "background footer";
+    max-height: 100vh;
+}
+.background { grid-area: background; }
+header { grid-area: header; }
+main { grid-area: main; }
+footer { grid-area: footer; }
 
 
 
