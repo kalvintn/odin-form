@@ -37,37 +37,37 @@
         <!-- THE FORM -->
         <main>
             <p>Let's do this!</p>
-            <form>
+            <form id="myForm">
                 <div class="field-group">
                     <label for="fname">First Name</label><br>
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" required>
                 </div>
                 <div class="field-group">
                     <label for="lname">Last Name</label><br>
-                    <input type="text" id="lname" name="lname">
+                    <input type="text" id="lname" name="lname" required>
                 </div>
                 <div class="field-group">
                     <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" required>
                 </div>
                 <div class="field-group">
                     <label for="phone">Phone Number</label><br>
-                    <input type="text" id="phone" name="phone">
+                    <input type="text" id="phone" name="phone" required>
                 </div>
                 <div class="field-group">
                     <label for="pass">Password</label><br>
-                    <input type="text" id="pass" name="pass">
+                    <input type="text" id="pass" name="pass" required>
                 </div>
                 <div class="field-group">
                     <label for="cpass">Confirm Password</label><br>
-                    <input type="text" id="cpass" name="cpass">
+                    <input type="text" id="cpass" name="cpass" required>
                 </div>        
             </form>
         </main>
 
         <!-- Buttons (Create Account, Log In) -->
         <footer>
-            <button>Create Account</button>
+            <button type="submit" form="myForm" class="submit-button">Create Account</button>
             <p>Already have an account? <a href="#">Log In</a></p>
             
         </footer>

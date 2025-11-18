@@ -130,7 +130,14 @@ input {
     border-radius: 5px;
     margin-top: 5px;
 }
-
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 8px #484848;
+}
+input:invalid {
+    border: 2px solid red;
+}
 
 
 /* footer */
