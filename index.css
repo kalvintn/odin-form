@@ -16,7 +16,6 @@ body {
 
 
 
-
 /* image size regulation */
 .background-image {
     max-height: 100vh;
@@ -24,6 +23,7 @@ body {
 .odin img {
     width: 4em;
 }
+
 
 
 
@@ -47,3 +47,37 @@ footer { grid-area: footer; }
 
 
 
+
+/* absolute positioning for Odin logo, text */
+.background {
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.odin {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #00000055;
+    padding: 20px 0;
+}
+.background p {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.background a:link {
+    color: white;
+}
+.odin h1 {
+    font-size: 4em;
+}
