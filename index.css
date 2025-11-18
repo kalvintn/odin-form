@@ -6,7 +6,7 @@
 }
 :root {
     --gradient: linear-gradient(to right, #ff7079, #ff3479);
-    --button-color: #2f009d;
+    --button-color: #4c00ff;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 
 
 
-/* grid, grid elements */
+/* page grid, grid elements */
 .container {
     display: grid;
     grid-template-rows: 1fr 1.2fr 1fr;
@@ -107,12 +107,29 @@ header p {
 
 
 
-/* form */
+/* form, grid */
 main {
     padding: 50px;
 }
-
-
+main p {
+    font-size: 1.2em;
+    padding: 10px;
+}
+form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.field-group {
+    padding: 10px;
+}
+input {
+    width: 250px;
+    height: 35px;
+    border: 1px solid #e5d7eb;
+    border-radius: 5px;
+    margin-top: 5px;
+}
 
 
 
@@ -130,7 +147,7 @@ footer button {
     padding: 15px 30px;
     border: none;
     border-radius: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 footer a:link {
