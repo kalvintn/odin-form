@@ -56,18 +56,24 @@
                 </div>
                 <div class="field-group">
                     <label for="pass">Password</label><br>
-                    <input type="text" id="pass" name="pass" required>
+                    <!-- At least: 8 length, 1 uppercase, 1 lowercase, and 1 special character -->
+                    <input type="password" title="Password must be at least 8 characters long
+                        and contain: 1 uppercase, 1 lowercase, and 1 special character." 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}$" id="pass" name="pass" required>
                 </div>
                 <div class="field-group">
+                    <!-- At least: 8 length, 1 uppercase, 1 lowercase, and 1 special character -->
                     <label for="cpass">Confirm Password</label><br>
-                    <input type="text" id="cpass" name="cpass" required>
+                    <input type="password" title="Password must be at least 8 characters long
+                        and contain: 1 uppercase, 1 lowercase, and 1 special character." 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}$" id="cpass" name="cpass" required>
                 </div>        
             </form>
         </main>
 
         <!-- Buttons (Create Account, Log In) -->
         <footer>
-            <button type="submit" form="myForm" class="submit-button">Create Account</button>
+            <button type="submit" form="myForm">Create Account</button>
             <p>Already have an account? <a href="#">Log In</a></p>
             
         </footer>

@@ -112,7 +112,7 @@ main {
     padding: 50px;
 }
 main p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 10px;
 }
 form {
@@ -135,9 +135,12 @@ input:focus {
     border: 2px solid blue;
     box-shadow: 2px 2px 8px #484848;
 }
-input:invalid {
+input[type="password"]:invalid {
     border: 2px solid red;
 }
+
+
+
 
 
 /* footer */
@@ -154,9 +157,9 @@ footer button {
     padding: 15px 30px;
     border: none;
     border-radius: 15px;
+    box-shadow: 2px 2px 2px black;
     margin-bottom: 20px;
 }
-
 footer a:link {
     color: var(--button-color);
 }
